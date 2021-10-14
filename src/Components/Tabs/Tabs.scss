@@ -1,0 +1,18 @@
+.tabs{
+  padding: 16px 0;
+  .tab{
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    margin-left: 16px;
+    transition: border-bottom-color 150ms;
+    &.active{
+      border-bottom-color: $c1;
+    }
+    span{
+      font-size: 18px;
+      font-weight: 500;
+      color: #555;
+    }
+  }
+}

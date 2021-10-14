@@ -1,0 +1,56 @@
+$panel: 300px;
+
+.admin-nav {
+  .toggle {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 26px;
+      filter: invert(100%);
+    }
+  }
+  .admin-panel {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: $panel;
+    transform: translateX($panel);
+    transition: transform 0.3s;
+    box-shadow: -1px 0 16px #555;
+    z-index: 9;
+    &.active {
+      transform: translateX(0);
+    }
+    .close {
+      padding: 20px 0;
+      img {
+        width: 32px;
+        display: block;
+        cursor: pointer;
+        padding-right: 16px;
+      }
+    }
+    ul {
+      li {
+        border-top: 1px solid #ddd;
+        a {
+          display: block;
+          padding: 8px 16px;
+          color: #646464;
+          font-size: 18px;
+          &:hover {
+            color: #656565;
+          }
+        }
+      }
+    }
+  }
+  .buttons{
+    margin: 32px;
+  }
+}

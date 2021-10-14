@@ -1,0 +1,14 @@
+.bread-crumbs-d{
+  padding: 16px 0;
+  .item{
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+    margin: 0 8px;
+    font-weight: 500;
+  }
+  .symbol{
+    font-size: 16px;
+    color: #999;
+  }
+}

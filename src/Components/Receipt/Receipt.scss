@@ -1,0 +1,88 @@
+.receipt-d{
+  position: relative;
+  padding: 16px;
+  direction: rtl;
+  label{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    &.title{
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .lists{
+    padding: 4px 0;
+    justify-content: space-between;
+    ul{
+     padding: 16px 0;
+     .logo-r{
+        background-color: #fff;
+        padding: 8px;
+     }
+     &.price{
+       li{
+         float: left;
+         label{
+           margin: 0 8px;
+         }
+       }
+     } 
+    }
+  }
+  h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    text-decoration: underline;
+  }
+  table{
+    border-collapse: collapse;
+    width: 90%;
+    th, td{
+      border: 1px solid black;
+      padding: 4px 8px;
+    }
+    th{
+      font-size: 14px;
+    }
+    td{
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+  @media print {
+    .receipt-d{
+      display: block;
+    }
+  }
+  .letter{
+    margin: 16px 0;
+    padding: 16px;
+    max-width: 300px;
+    label{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    pre{
+      font-size: 16px;
+      font-weight: 300;
+      white-space: pre-wrap;
+    }
+  }
+  .employee-input{
+    height: 1px;
+    margin-top: 26px;
+    background-color: #000;
+    max-width: 150px;
+  }
+  .num-order-duplicate{
+    margin-top: 128px;
+    h2{
+      font-size: 60px;
+      font-weight: 600;
+      text-align: left;
+    }
+  }
+}

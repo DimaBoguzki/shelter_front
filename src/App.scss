@@ -1,0 +1,216 @@
+@import './Styles/Varibales.scss';
+@import './Styles/Header.scss';
+@import './Styles/LoginEmployee.scss';
+@import './Styles/ViewData.scss';
+@import './Styles/AdminNav.scss';
+@import './Components/According/According.scss';
+@import './Components/Button/Button.scss';
+@import './Components/BreadCrumbs/BreadCrumbs.scss';
+@import './Components/AdminMenu/AdminMenu.scss';
+@import './Components/Table/Table.scss';
+@import './Components/PageTwoHalves/PageTwoHalves.scss';
+@import './Components/Tabs/Tabs.scss';
+
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+select{
+	padding: 4px;
+	font-size: 16px;
+	font-weight: 500;
+}
+button{
+	cursor: pointer;
+	border: none;
+	box-shadow: none;
+}
+.push-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	button{
+		width: 350px;
+		height: 350px;
+		background-color: #f00;
+		box-shadow: 0 0 8px #000;
+		border-radius: 50%;
+		transition: box-shadow 300ms;
+		&:active{
+			box-shadow: 0 0 4px #000;
+		}
+	}
+	label{
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		color: rgb(255, 230, 0);
+		font-weight: 600;
+		font-size: 32px;
+	}
+}
+#root{
+	direction: rtl;
+}
+body {
+  margin: 0;
+  padding: 0;
+	&.modal-open {
+		height: 100vh;
+    overflow-y: hidden;
+	}
+}
+.primary-title{
+	margin: 0 0 16px 0;
+	font-size: 40px;
+	font-weight: 700;
+	color: $textColor;
+	text-align: center;
+}
+.employee{
+  display: flex;
+	background-color: $c2;
+}
+.page{
+	min-height: 100vh;
+  margin: 0 auto;
+	background-color: $c2;
+}
+.container {
+	clear: both;
+	width:  1100px;
+	margin: 0 auto;
+	min-height: 100%;
+	@media all and (max-width: 1100px) {
+		width: 96%;
+	}
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.col-lg-12 {width: 100%;}
+	.col-lg-11_5 {width: 95.83333333%;}
+	.col-lg-11 {width: 91.66666667%;}
+	.col-lg-10 {width: 83.33333333%;}
+	.col-lg-9_5 {width: 79.16666667%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-8_5 {width: 70.83333333%;}
+	.col-lg-8 {width: 66.66666667%;}
+	.col-lg-7_5 {width: 62.5%;}
+	.col-lg-7 {width: 58.33333333%;}
+	.col-lg-6_5 {width: 54.16666667%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-5_5 {width: 45.83333333%;}
+	.col-lg-5 {width: 41.66666667%;}
+	.col-lg-4_5 {width: 37.5%;}
+	.col-lg-4 {width: 33.33333333%;}
+	.col-lg-3_5 {width: 29.16666667%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-2_5 {width: 20.83333333%;}
+	.col-lg-2 {width: 16.66666667%;}
+	.col-lg-1_5 {width: 12.5%;}
+	.col-lg-1 {width: 8.33333333%;}
+	.col-lg-0_5 {width: 4.166666667%;}
+}
+.sticky{
+	position: sticky;
+	top: 0;
+}
+a{
+	text-decoration: none;
+}
+.fix {
+  overflow-y: hidden;
+}
+#modal-root {
+	.popup {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.2);
+		.popup-wrapper {
+			position: relative;
+			z-index: 1;
+			top: 50%;
+			transform: translateY(-50%);
+			width: calc(100% - 32px);
+			margin: 0 auto;
+			.close {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: #fff;
+				top: -20px;
+				right: -20px;
+				box-shadow: 0 0 4px rgba(0,0,0,0.3);
+				cursor: pointer;
+				z-index: 9;
+				img {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					display: block;
+					width: 16px;
+					margin: 0 auto;
+				}
+			}
+		}
+		.outline {
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.map-wrapper {
+	margin-bottom: 24px;
+	background: #fff;
+	padding: 8px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+	.new-point {
+		position: relative;
+		width: 27px;
+		height: 27px;
+		svg {
+			display: block;
+			cursor: pointer;
+		}
+		.conntent{
+			position: absolute;
+			right: 0;
+			width: 200px;
+			padding: 16px;
+			background-color: #fff;
+			border: 1px solid #000;
+			z-index: 1;
+			.close{
+				cursor: pointer;
+				display: block;
+				z-index: 2;
+				margin-bottom: 8px;
+			}
+			label{
+				&.title{
+					font-weight: 500;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}

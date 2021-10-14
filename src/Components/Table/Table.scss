@@ -1,0 +1,39 @@
+.table-view{
+  border-collapse: box;
+  border-spacing: 1px 8px;
+  width: 100%;
+  direction: ltr;
+  thead{
+    tr{
+      background-color: transparent;
+      background-color: $c1
+    }
+  }
+  tbody{
+    tr{
+      background-color: #fff;
+    }
+  }
+  tr{
+    font-size: 16px;
+    line-height: 21px;
+    th{
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    td, th{       
+      letter-spacing: 0.9px;
+      font-weight: 500;
+      &.icon{
+        text-align: center;
+        cursor: pointer;
+        width: 30px;
+      }
+    }
+    th,td{
+      padding: 16px 8px;
+    }
+  }
+}

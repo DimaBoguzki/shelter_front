@@ -1,0 +1,24 @@
+#header{
+  width: 100vw;
+  background-color: $c1;
+  padding: 8px 0;
+  .flex-container{
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    a{
+      color: $c2;
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 16px;
+      transition: color 100ms;
+      &:hover{
+        color: darken($c2, 10%);
+      }
+    }
+  }
+}

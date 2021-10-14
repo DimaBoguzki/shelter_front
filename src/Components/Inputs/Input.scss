@@ -1,0 +1,60 @@
+.input{
+  position: relative;
+  outline: none;
+  padding: 5px;
+  border: none;
+  border: 0.5px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+  padding-bottom: 5px;
+  box-shadow: none;
+  transition: border-bottom 200ms;
+  font-size: 16px;
+  font-weight: 500;
+  width: 80%;
+  &.text-area{
+    resize: none;
+    height: 300px;
+  }
+  &::placeholder{
+    font-weight: 200;
+    color: #aaa;
+  }
+  &:focus{
+    border-bottom: 1px solid #aaa;
+  }
+  
+}
+.checkbox-input-d{
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+  .title{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .action-check-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 0 8px;
+    border: 0.5px solid #aaa;
+    img{
+      width: 8px;
+      height: 8px;
+    }
+    &.big{
+      width: 22px;
+      height: 22px;
+      img{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
